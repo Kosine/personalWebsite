@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 
     <title>Sanjay Lindsay</title>
+    <script src="theme/js/Chart.js"></script>
 
   </head>
 
@@ -14,7 +15,7 @@
 ====================================================================================================================================================-->
 
     <nav id="nav" class="navbar-default">
-      <div class="container">
+      <div class="container-nth">
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-target="#bs-navbar-collapse">
@@ -52,4 +53,135 @@
           <h1 id="heading">SANJAY LINDSAY |ASPIRING WEB DEVELOPER</h1>
           <hr>
           <p>Computer-Engineering major, self-taught Web-developer</p>
+          <a href="#about" class="btn-primary page-scroll">Find Out More</a>
+        </div>
+      </div>
+    </header>
+
+    <!--===========================ABOUT==================================================-->
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <h2 class="about-heading">About me!</h2>
+        <hr class="light">
+        <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+           Fusce ut mauris risus. In elementum nec neque sit amet facilisis. Curabitur<br>
+            accumsan lacus vel nibh porta, quis pretium nisi auctor. Quisque vel mi dui.</p>
+        <a href="theme/docs/Resume.docx" class="btn-secondary page-scroll">View Resume!</a>
+      </div>
+    </section>
+
+    <!--=================================Skill-set========================================-->
+    <section id="skill-set">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-heading">SKill-Set</h2>
+          <hr class="primary">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <canvas id="javascript" height="130" width="130"></canvas>
+          <h4>JavaScript</h4>
+          <br>
+          <script>
+            var doughnutData = [
+              {
+                value: 70,
+                color: "#f85c37"
+              },
+              {
+                value: 30,
+                color: "#ecf0f1"
+              }
+            ];
+            var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+          </script>
+
+        <canvas id="html/css" height="130" width="130"></canvas>
+        <h4>HTML/CSS</h4>
+        <br>
+        <script>
+          var doughnutData = [
+            {
+              value: 70,
+              color: "#f85c37"
+            },
+            {
+              value: 30,
+              color: "#ecf0f1"
+            }
+          ];
+          var myDoughnut = new Chart(document.getElementById("html/css").getContext("2d")).Doughnut(doughnutData);
+        </script>
+
+        <canvas id="java" height="130" width="130"></canvas>
+        <h4>Java</h4>
+        <br>
+        <script>
+          var doughnutData = [
+            {
+              value: 70,
+              color: "#f85c37"
+            },
+            {
+              value: 30,
+              color: "#ecf0f1"
+            }
+          ];
+          var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+          </script>
+        </div>
+      </div>
+
+      <!--===============================================================================================================================
+                          PORTFOLIO
+      ================================================================================================================================-->
+      <section id="portfolio" name="portfolio"></section>
+      <div class="container">
+          <div class="row">
+            <h2>Portfolio</h2>
+            <hr>
+            <br>
+            <p>NO WORK IN PROGRESS</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--================================================================================================================================
+                        CONTACT ME
+      ================================================================================================================================-->
+      <section id="contact" name="contact"></section>
+        <div class="container">
+
+              <h2>Contact Me</h2>
+              <hr>
+              <form method="post" action="theme/mail/contact_me.php">
+                <label>Name</label>
+                <input name="name" placeholder="Type Here">
+                <br>
+                <label>Email</label>
+                <input name="email" type="email" placeholder="Type Here">
+                <br>
+                <label>Message</label>
+                <textarea name="message" placeholder="Type Here"></textarea>
+                <br>
+                <label>*What is 5+1? (anti-spam)</label>
+                <input name="human" placeholder="Type Here">
+                <input id="submit" name="submit" type="submit" value="Submit">
+              </form>
+        </div>
+
+      <!--================================================================================================================================
+                        FOOTER SECTION
+      =================================================================================================================================-->
+      <section id="contact" name="contact"></section>
+      <div id="footer">
+        <div class="container">
+          <h2>Let's Talk!</h2>
+          <hr>
+
+
+    </body>
 </html>
