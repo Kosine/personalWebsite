@@ -30,7 +30,7 @@
         </div>
 
         <div id = "nav-wrapper">
-          <ul class="navbar-right">
+          <ul class="navbar-right nav-right">
             <li>
               <a id= "about" href="#aboutSection">About</a>
             </li>
@@ -70,7 +70,7 @@
       <div class = "container">
         <div class = "row">
           <div class = "col-lg-8 col-lg-offset-2 text-center">
-            <h2 class="about-heading">About me!</h2>
+            <h2 class="section-heading">About me!</h2>
             <hr class="primary">
             <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                Fusce ut mauris risus. In elementum nec neque sit amet facilisis. Curabitur<br>
@@ -190,27 +190,32 @@
                         CONTACT ME
       ================================================================================================================================-->
       <section id="contactSection">
-        <div class="container">
-              <h2>Contact Me</h2>
-              <hr>
-              <form method="post" action="theme/mail/contact_me.php">
-                <label>Name</label>
-                <input name="name" placeholder="Type Here">
-                <br>
-                <label>Email</label>
-                <input name="email" type="email" placeholder="Type Here">
-                <br>
-                <label>Subject</label>
-                <input name="subject" placeholder="Type Here">
-                <br>
-                <label>Message</label>
-                <textarea name="message" placeholder="Type Here"></textarea>
-                <br>
-                <label>*What is 5+1? (anti-spam)</label>
-                <input name="human" placeholder="Type Here">
-                <input id="submit" class="button" name="submit" type="submit" value="Submit">
-              </form>
-              <hr>
+        <div class="contact-form-container">
+          <h2 class="contact-form-header section-heading">Contact Me</h2>
+          <form class="contact-form" method="post" action="theme/mail/contact_me.php">
+            <span class="contact-form-group">
+              <label class="contact-form-label">Name</label>
+              <input class="contact-form-input" name="name" placeholder="Type Here">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Email</label>
+              <input class="contact-form-input" name="email" type="email" placeholder="Type Here">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Subject</label>
+              <input class="contact-form-input" name="subject" placeholder="Type Here">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Message</label>
+              <textarea class="contact-form-textarea" name="message" placeholder="Type Here"></textarea>
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">*What is 5+1? (anti-spam)</label>
+              <input class="contact-form-input" name="human" placeholder="Type Here">
+            </span>
+
+            <input id="submit" class="button" name="submit" type="submit" value="Submit">
+          </form>
         </div>
       </section>
       <!--================================================================================================================================
