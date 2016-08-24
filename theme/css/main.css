@@ -11,6 +11,10 @@ hr {
   max-width: 50px;
 }
 
+.blue{
+  border-color: #337ab7;
+}
+
 section {
   padding: 100px 0;
 }
@@ -19,6 +23,10 @@ section h2, p, a {
   text-align: center;
 }
 
+#homeSection p {
+  font-size: 1.15em;
+  font-weight: 100;
+}
 .navbar-header {
   padding: 5px 0;
 }
@@ -261,8 +269,7 @@ textarea:focus, input:focus {
   border: 1px solid #09C;
 }
 
-section nth-child(2n+1) {
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 176px);
-  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+#experienceSection ul li p {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  text-align: justify;
 }
