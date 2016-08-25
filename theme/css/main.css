@@ -1,0 +1,275 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+hr {
+  border-color: #F05F40;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+.blue{
+  border-color: #337ab7;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2, p, a {
+  text-align: center;
+}
+
+#homeSection p {
+  font-size: 1.15em;
+  font-weight: 100;
+}
+.navbar-header {
+  padding: 5px 0;
+}
+
+.navbar-header a {
+  font-size: 2em;
+  padding-left: 10px;
+  color: white;
+
+}
+
+.navbar-header :hover{
+  background-color: #333;
+  text-decoration: none;
+}
+
+#nav {
+  background:rgba(1,1,1,0.5);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#nav-wrapper {
+  width: 100%;
+  margin: auto 0;
+  text-align: right;
+
+}
+
+#nav ul {
+  list-style-type: none;
+  padding-right: 20px;
+
+}
+
+#nav ul li {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#nav ul li:hover {
+  background-color: #333;
+}
+
+#nav ul li a,
+#nav ul li a:visited {
+  display: block;
+  padding: 15px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.nav-right {
+  margin: 0;
+}
+/**.row {
+  display: flex;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}*/
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('/theme/image/header.jpg');
+  text-align: center;
+  color: white;
+}
+
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+  font-weight: 300px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%
+  }
+
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    padding: 0 50px;
+  }
+
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button-scroll,
+.button {
+  min-width: 100px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background: #09C;
+  color: #fff;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #999;
+  text-decoration: none;
+}
+
+.button-scroll:hover,
+.button:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #09C;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.service-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact-form-container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form-header {
+  background-color: #337ab7;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.contact-form {
+  background-color: #fafafa;
+  padding: 30px 40px;
+}
+
+.contact-form-group {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.contact-form-label {
+  color: #999;
+  font-weight: lighter;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 20px 15px;
+  font-size: 1.5em;
+  font-weight: 100;
+  opacity: 0.8;
+  background-color: #fafafa;
+  border-bottom: 1px solid #999;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #337ab7;
+}
+
+textarea {
+  width: 375px;
+  height: 150px;
+}
+
+textarea {
+  display: block;
+}
+
+#submit {
+  width: 100px;
+  right: 20px;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid #09C;
+}
+
+#experienceSection ul li p {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  text-align: justify;
+}

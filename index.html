@@ -1,53 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="theme/image/favicon/favicon-32x32.png">
     <title>Sanjay Lindsay</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="theme/css/main.css" rel="stylesheet" type="text/css">
+    <script src="theme/js/Chart.js"></script>
+
+    <link href="theme/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+    <link rel="stylesheet" href="theme/font-awesome-4.6.3/css/font-awesome.min.css">
+
   </head>
-  <body>
-    <div id="upperSection">
-      <h1>
-        <p>Claflin University based Computer Engineering Major</p>
-        <P>SANJAY LINDSAY</p>
-        <p>EAT, CODE, SLEEP, REPEAT</p>
-        <a href="#" class="myButton">DISCOVER MY WORK</a>
-      </h1>
-    </div>
-    <div id="midSection">
-      <header>PROFILE</header>
-      <div class="partial">
-        <h4>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-          Ut vel orci vel nisl lobortis faucibus ac id dolor. Aliquam
-        erat volutpat. Aliquam commodo magna a nunc feugiat dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-         per inceptos himenaeos. Maecenas vel condimentum augue. Suspendisse volutpat leo ex, quis posuere metus hendrerit quis. Etiam max
-       </h4>
+
+  <body id="top">
+<!--====================================================================================================================================================
+      NAVIGATION BAR
+====================================================================================================================================================-->
+
+    <nav id="nav" class="navbar-default">
+      <div class="container-nth">
+
+        <div class="navbar-header">
+          <a id="home"  href="#homeSection">Sanjay Lindsay</a>
+        </div>
+
+        <div id = "nav-wrapper">
+          <ul class="navbar-right nav-right">
+            <li>
+              <a id= "about" href="#aboutSection">About</a>
+            </li>
+            <li>
+              <a id= "skillset" href="#skillsetSection">Skill-set</a>
+            </li>
+            <li>
+              <a id= "experience" href="#experienceSection">Portfolio</a>
+            </li>
+            <li>
+              <a id= "contact" href="#contactSection">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================================================================================================================
+            HEADER
+    =====================================================================================================================-->
+
+    <header>
+      <div id = "homeSection">
+      <div class="header-content">
+        <div class"header-content-inner">
+          <h1 id="heading">Sanjay Lindsay | Aspiring Web Developer & Computer Hardware Engineer </h1>
+          <hr>
+          <p>Computer-Engineering major, self-taught Web-developer</p>
+          <a href="#aboutSection" class="button-scroll">Find Out More</a>
+        </div>
       </div>
     </div>
-    <div id="lowerSection">
-      <header>WHY PURSUE A CAREER IN COMPUTER</header>
-      <div class="partial">
-        <h4>
-          Donec in eros orci. Praesent sollicitudin, dui id porttitor semper, sapien ipsum efficitur dui, ac viverra orci turpis id
-          magna. Curabitur hendrerit neque nec risus accumsan, et venenatis sapien pulvinar.
-           Vestibulum scelerisque vulputate risus, vel tristique ipsum tincidunt sed. Vivamus semper imperdiet commodo.
-         </h4>
+    </header>
+
+    <!--===========================ABOUT==================================================-->
+    <section class="bg-primary" id="aboutSection">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">About me!</h2>
+            <hr class="primary">
+            <p class="text-faded">My vision is to be one of the individuals who use technology and make it accessible to everyone in my existing environ by contributing my skills
+                                  to the further development of technologies and applications and, also use my work to inspire others. I want to be the gateway through which further
+                                  innovation can come from my companions and together we can make the world a better place to work, to do business and to live.</p>
+                                  <br>
+            <a href="theme/docs/Resume.pdf" class = "button-scroll">
+              <i class = "fa fa-download"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="enquiry">
-      <form>
-        Name:<br>
-        <input type="text" name="name"><br>
-        Company:<br>
-        <input type="text" name="company"><br>
-        Email address:<br>
-        <input type="text/symbol" name="email"><br>
-        <textarea rows="5" cols="70" maxlength="200">
-          Enter text here. 200
-        </textarea><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+    </section>
+
+    <!--=================================Skill-set========================================-->
+    <section id="skillsetSection">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12 text-center">
+            <h2 class="section-heading">Skill-Set</h2>
+            <hr class="blue">
+          </div>
+        </div>
+      </div>
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-md-3 text-center">
+              <div class="service-box">
+                <canvas id="photoshop" height="130" width="130"></canvas>
+                <h4>Adobe Photoshop</h4>
+                <br>
+                <script>
+                  var doughnutData = [
+                    {
+                      value: 30,
+                      color: "#337ab7"
+                    },
+                    {
+                      value: 70,
+                      color: "#ecf0f1"
+                    }
+                  ];
+                  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                </script>
+              </div>
+            </div>
+          <div class = "col-md-3 text-center">
+            <div class="service-box">
+              <canvas id="javascript" height="130" width="130"></canvas>
+              <h4>JavaScript</h4>
+              <br>
+              <script>
+                var doughnutData = [
+                  {
+                    value: 40,
+                    color: "#337ab7"
+                  },
+                  {
+                    value: 60,
+                    color: "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+              </script>
+            </div>
+          </div>
+
+          <div class = "col-md-3 text-center">
+            <div class="service-box">
+              <canvas id="java" height="130" width="130"></canvas>
+              <h4>Java</h4>
+              <br>
+              <script>
+                var doughnutData = [
+                  {
+                    value: 70,
+                    color: "#337ab7"
+                  },
+                  {
+                    value: 30,
+                    color: "#ecf0f1"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+              </script>
+            </div>
+        </div>
+        <div class = "col-md-3 text-center">
+          <div class="service-box">
+            <canvas id="html/css" height="130" width="130"></canvas>
+            <h4>HTML/CSS</h4>
+            <br>
+            <script>
+              var doughnutData = [
+                {
+                  value: 85,
+                  color: "#337ab7"
+                },
+                {
+                  value: 15,
+                  color: "#ecf0f1"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("html/css").getContext("2d")).Doughnut(doughnutData);
+            </script>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+      <!--===============================================================================================================================
+                          Experience
+      ================================================================================================================================-->
+      <section id = "experienceSection">
+        <div class="container">
+          <div class = "row">
+            <div class = "col-lg-12 text-center">
+              <h2 class = "section-heading">Programming Experience</h2>
+              <hr class = "blue">
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-md-6 text-center">
+              <h3><a href = "http://passporttocollege.org">Passport To College</a></h3>
+              <ul>
+                <li><p>Integrate user-facing elements developed by front-end developers with server side logic</p></li>
+                <li><p>Maintain the central database, and ensure high performance and responsiveness utilizing Jade and SCSS for requests
+                  from the front-end</p></li>
+              </ul>
+            </div>
+            <div class = "col-md-6 text-center">
+              <h3><a href = "https://www.ruralsourcing.com/mobile_hackathon/">RSI Hackathon</a></h3>
+              <ul>
+                <li><p>Participated in a timed debugging coding competition</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================================================================================================================================
+                        CONTACT ME
+      ================================================================================================================================-->
+      <section id="contactSection">
+        <div class="contact-form-container">
+          <h2 class="contact-form-header section-heading">Contact Me</h2>
+          <form class="contact-form" method="post" action="theme/mail/contact_me.php">
+            <span class="contact-form-group">
+              <label class="contact-form-label">Name</label>
+              <input class="contact-form-input" name="name" placeholder="John Doe">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Email</label>
+              <input class="contact-form-input" name="email" type="email" placeholder="johndoe@email.com">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Subject</label>
+              <input class="contact-form-input" name="subject" placeholder="Type Here">
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">Message</label>
+              <textarea class="contact-form-textarea" name="message" placeholder="Enter"></textarea>
+            </span>
+            <span class="contact-form-group">
+              <label class="contact-form-label">*What is 5+1? (anti-spam)</label>
+              <input class="contact-form-input" name="human" placeholder="Type Here">
+            </span>
+
+            <input id="submit" class="button" name="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <!--================================================================================================================================
+                        FOOTER SECTION
+      =================================================================================================================================-->
+      <footer class="text-center">
+        <div class="footer-above">
+          Copyright &copy; sanjaylindsay.me 2016
+        </div>
+        <div id = "social-container">
+          <ul class="social-list">
+            <a href = "https://www.linkedin.com/in/sanjay-lindsay-a7655510b"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <a href = "https://twitter.com/intent/tweet?screen_name=sanjaylindsay"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            <a href = "https://github.com/kosine"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+            <a href = "mailto:sanjayl@outlook.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+          </ul>
+        </div>
+      </footer>
+      <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+      <script src="theme/js/smoothscroll.js"></script>
+      <script src="theme/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
