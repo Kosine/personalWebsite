@@ -27,75 +27,69 @@ section h2, p, a {
   font-size: 1.15em;
   font-weight: 100;
 }
-.navbar-header {
-  padding: 5px 0;
-}
 
-.navbar-header a {
-  font-size: 2em;
-  padding-left: 10px;
-  color: white;
-
-}
-
-.navbar-header :hover{
-  background-color: #333;
-  text-decoration: none;
-}
-
-#nav {
-  background:rgba(1,1,1,0.5);
-  width: 100%;
-  top: 0;
-  position: fixed;
-  z-index: 1;
-}
-
-#nav-wrapper {
-  width: 100%;
-  margin: auto 0;
-  text-align: right;
+@media (min-width: 768px) {
+  .navbar-default .navbar-header .navbar-toggle {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 
 }
+  .navbar-header {
+    padding: 5px 0;
+  }
 
-#nav ul {
-  list-style-type: none;
-  padding-right: 20px;
+  .navbar-header a {
+    font-size: 2em;
+    padding-left: 10px;
+    color: white;
 
-}
+  }
 
-#nav ul li {
-  display: inline-block;
-  color: white;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
+  .navbar-header :hover{
+    background-color: #333;
+    text-decoration: none;
+  }
 
-#nav ul li:hover {
-  background-color: #333;
-}
+  #nav {
+    background:rgba(1,1,1,0.5);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+  }
 
-#nav ul li a,
-#nav ul li a:visited {
-  display: block;
-  padding: 15px;
-  color: #ccc;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
+  #nav ul {
+    list-style-type: none;
+    padding-right: 20px;
 
-.nav-right {
-  margin: 0;
-}
-/**.row {
-  display: flex;
-  position:relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-}*/
+  }
+
+  #nav ul li {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  #nav ul li:hover {
+    background-color: #333;
+  }
+
+  #nav ul li a,
+  #nav ul li a:visited {
+    display: block;
+    padding: 15px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .nav-right {
+    margin: 0;
+  }
 
 header {
   position: relative;
