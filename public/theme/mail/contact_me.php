@@ -8,13 +8,13 @@
   $human = $_POST['human'];
 
   $body = "From: $name\n E-mail: $email\n Message: \n $message";
-  if ($_POST['submit']) {
-    if (mail($to, $subject, $body)) {
+  if ($human && $human == '4') {
+    if(mail($to, $subject, $body)) {
       echo '<p>Your message has been sent!</p>';
     } else {
       echo '<p>Something went wrong, go back and try again</p>';
     }
-  } else if ($_POST['submit'] && $human != '4') {
+  } else if (!$human || $human != '4') {
     echo '<p>You answered the anti-spam question incorrectly!</p>';
   }
  ?>
