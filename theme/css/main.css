@@ -195,7 +195,7 @@ header .header-content .header-content-inner p {
   text-align: center;
 }
 
-.contact-form-container {
+/**.contact-form-container {
   width: 800px;
   max-width: 100%;
   margin: 0 auto;
@@ -261,7 +261,7 @@ textarea {
 
 textarea:focus, input:focus {
   border: 1px solid #09C;
-}
+}*/
 
 #experienceSection ul li p {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
