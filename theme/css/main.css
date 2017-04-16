@@ -195,38 +195,28 @@ header .header-content .header-content-inner p {
   text-align: center;
 }
 
-/**.contact-form-container {
+.contact-form-container {
   width: 800px;
   max-width: 100%;
   margin: 0 auto;
+  background-color: #fafafa;
+  padding: 30px 40px;
+
+
 }
 
-.contact-form-header {
-  background-color: #337ab7;
-  color: white;
-  width: 100%;
-  text-align: center;
-  padding: 20px 10px;
-  margin: 0;
-}
 
 .contact-form {
   background-color: #fafafa;
   padding: 30px 40px;
 }
 
-.contact-form-group {
-  display: block;
-  margin: 0 0 20px 0;
-}
-
-.contact-form-label {
+label {
   color: #999;
   font-weight: lighter;
 }
 
-.contact-form-input,
-.contact-form-textarea {
+input,textarea {
   width: 100%;
   display: block;
   border: none;
@@ -238,8 +228,7 @@ header .header-content .header-content-inner p {
   border-bottom: 1px solid #999;
 }
 
-.contact-form-input:focus,
-.contact-form-textarea:focus {
+input:focus,textarea:focus {
   border: none;
   outline: none;
   border-bottom: 1px solid #337ab7;
@@ -254,14 +243,15 @@ textarea {
   display: block;
 }
 
-#submit {
+#submit-button {
   width: 100px;
   right: 20px;
+  text-align: center;
 }
 
 textarea:focus, input:focus {
   border: 1px solid #09C;
-}*/
+}
 
 #experienceSection ul li p {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;

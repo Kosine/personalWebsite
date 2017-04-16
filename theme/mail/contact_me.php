@@ -1,44 +1,33 @@
 <?php
+	if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$to = 'sanjayl@outlook.com';
+		$subject = 'New Contact';
+		$body = '<html>
+					<body>
+						<h2> Feedback- '.$email.'</h2>
+						<hr>
+						<p>Name: <br>'.$name.'</p>
+						<p>Email: <br>'.$email.'</p>
+						<p>Message: <br>'.$message.'</p>
+					</body>
+				</html>';
 
-if(empty($_POST['name'])    ||
-  empty($_POST['email'])    ||
-  empty($_POST['subject'])  ||
-  empty($_POST['message'])  ||
-  !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
-  {
-    echo "No arguments Provided!";
-    return false;
-  }
+		//headers
+		$headers = "From: ".$name." <".$email.">\r\n";
+		$headers .= "Reply-To: ".$email."\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+		$headers .= "Content-type: text/html; character-utf-8";
 
-  $name = strip_tags(htmlspecialchars($_POST['name']));
-  $email = strip_tags(htmlspecialchars($_POST['email']));
-  $subject = strip_tags(htmlspecialchars($_POST['subject']));
-  $message = strip_tags(htmlspecialchars($_POST['message']));
-
-  $to = 'sanjayl@outlook.com';
-  $email_subject = "Website Contact Form: $name";
-  $email_body = "You have received a new message from your website contact.\n\n". "Here is the detail:\n\nName: $name\n\nEmail: $email\n\nSubject: $subject\n\nMessage:\n$message";
-  $headers = "From: noreply@sanjaylindsay.me\n";
-  $headers .="Reply-To: $email";
-  mail($to,$email_subject,$email_body,$headers);
-  return true;
-
-/**  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $from = 'From: Sanjay Website';
-  $to = 'sanjayl@outlook.com';
-  $subject = 'Comment';
-  $human = $_POST['human'];
-
-  $body = "From: $name\n E-mail: $email\n Message: \n $message";
-  if ($_POST['submit']) {
-    if (mail($to, $subject, $body)) {
-      echo '<p>Your message has been sent!</p>';
-    } else {
-      echo '<p>Something went wrong, go back and try again</p>';
-    }
-  } else if ($_POST['submit'] && $human != '4') {
-    echo '<p>You answered the anti-spam question incorrectly!</p>';
-  }*/
- ?>
+		//send
+		$send = mail($to, $subject, $body, $headers);
+		if ($send) {
+			echo '<br>';
+			echo 'Thank you for contacting me. I will get back to you as soon as possible';
+		} else {
+			echo 'error';
+		}
+}
+?>

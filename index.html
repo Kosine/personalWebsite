@@ -228,20 +228,21 @@
               <hr class = "blue">
               <br>
             </div>
-            <div class = "col-lg-8 col-lg-offset-2 text-center">
-              <p class="text-faded"> Hi! Thank you for visiting my website, you can contact me by clicking the mail icon on the left below or click the cellphone icon on the right to give me a call.</p>
-            </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 text-center">
-              <a href = "mailto:sanjayl@outlook.com"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-lg-6 text-center">
-              <a href="tel: +1-843-468-3695"><i class="fa fa-phone-square fa-5x" aria-hidden="true"></i></a>
-            </div>
-          </div>
+        <div class="contact-form-container">
+          <form action="mail/contact_me.php">
+
+                  <label for="name">Your name:</label><br>
+                  <input id="name" class="input" name="name" type="text" size="60"></input><br>
+                  <label for="email">Your email:</label><br>
+                  <input id="email" class="input" name="email" type="text" size="30"></input><br>
+
+                  <label for="subject">Subject</label><br>
+                  <textarea id="subject" name="subject" placeholder="Say hello.." size="350" maxlength="350"></textarea><br>
+
+              <input id="submit-button" type="submit" value="Send email"/>
+          </form>
         </div>
       </section>
       <!--================================================================================================================================
